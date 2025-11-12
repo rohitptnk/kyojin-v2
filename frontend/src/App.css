@@ -8,22 +8,80 @@
   text-align: center;
 }
 
+/* Navbar stuff */
 .navbar{
   position: fixed;
   font-family: "Space Grotesk", sans-serif;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: white;
-  color: rgb(61, 164, 238);
-  padding: 1px 0.1rem;
-  box-shadow: 0 5px 5px rgba(5, 213, 250, 0.1);
-  z-index: 1000;
+  background-color: #1c1c1c;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 5px 5px rgba(19, 20, 20, 0.1);
 }
 
 .navbar h1{
-  font-size: 33px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  position: relative;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  display: block;
+}
+
+/* Dropdown menu*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #2a2a2a;
+  min-width: 180px;
+  border-radius: 5px;
+  z-index: 100;
+}
+
+.dropdown-content a{
+  color: white;
+  padding: 10px 15px;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #444;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn:hover {
+  color: #3c3c3c
 }
 
 main{
@@ -39,12 +97,19 @@ main{
 }
 
 .upload-label {
-  background-color: #4FC3F7;
+  background-color: #1c1c1c;
   color: white;
   padding: 0.6rem 1.2rem;
-  border-radius: 8px;
+  border: 1px solid #3c3c3c; 
+  border-radius: 12px;
   cursor: pointer;
+  /* box-shadow: 0 0 4px rgba(255, 255, 255, 0.6); */
   font-weight: 600;
+}
+
+.upload-label:hover {
+  background-color: #333333; /* change to lighter grey or any color you like */
+  /* color: #ffffff; optional: change text color on hover */
 }
 
 #file-upload {
@@ -59,8 +124,16 @@ p {
 
 .upload-text {
   font-size: 1.1rem;
-  font-weight: 500;
-  color: #333;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 1px;
+  text-align: center;
+}
+
+.upload-text-small {
+  font-size: 1rem;
+  font-weight: 100;
+  color: #ffffff;
   margin-bottom: 1px;
   text-align: center;
 }

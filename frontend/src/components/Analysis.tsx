@@ -40,9 +40,9 @@ function UploadBar() {
     return (
         <div className="upload-bar">
             <p className='upload-text'>
-                Upload your bank statements to get AI-powered analysis and insights.
+                Upload your files to get AI-powered analysis and insights.
             </p>
-            <p className="text-sm text-gray-500 text-center">
+            <p className="upload-text-small">
                 Supported formats: PDF, CSV, XLSX
             </p>
             <label htmlFor="file-upload" className="upload-label">
