@@ -28,6 +28,7 @@ function UploadBar() {
             });
             console.log(response.data);
             setSuccess(true);
+            setUploading(true);
             setResult(response.data)
         } catch (err) {
             console.error(err);

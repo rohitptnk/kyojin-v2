@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function Navbar(){
     return(
         <nav className="navbar">
@@ -7,19 +9,19 @@ function Navbar(){
                     Kyojin AI
                 </h1>
                 <ul className="navbar-menu">
-                    <li><a>Home</a></li>
+                    <li><Link to="/">Home</Link></li>
 
                     <li className="dropdown">
-                        <a className="dropbtn">Services ▾</a>
+                        <a className="dropbtn">Tools ▾</a>
                         <div className="dropdown-content">
-                            <a>DocChat</a>
-                            <a>Analysis</a>
-                            <a>PaperQuery</a>
-                            <a>ResearchPilot</a>
-                            <a>Coding Assistant</a>
+                            <a href="#">DocChat</a>
+                            <a href="#">Analysis</a>
+                            <a href="#">PaperQuery</a>
+                            <a href="#">ResearchPilot</a>
+                            <a href="#">Coding Assistant</a>
                         </div>
                     </li>
-                    <li><a>About</a></li>
+                    <li><a href="#">About</a></li>
                 </ul>
             </div>
         </nav>

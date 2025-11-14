@@ -21,9 +21,9 @@ export default function CategorySummaryTable({ data }: CategoryTableProps) {
             </th>
           </tr>
         </thead>
-        <tbody className="divide-y divide-black">
+        <tbody className="bg-white">
           {data.map((row, i) => (
-            <tr key={i} className="hover:bg-gray-50">
+            <tr key={i} className="bg-white">
               <td className="border-2 border-black px-4 py-2">{row.category}</td>
               <td className="border-2 border-black px-4 py-2 text-right">
                 {row.income.toLocaleString()}

@@ -37,10 +37,11 @@
 
 .navbar-menu {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-left: 10px;
 }
 
 .navbar-menu li {
@@ -49,9 +50,13 @@
 
 .navbar-menu a {
   text-decoration: none;
-  color: white;
+  color: #bbbbbb;
   padding: 10px;
   display: block;
+}
+
+.navbar-menu a:hover {
+  color: white;
 }
 
 /* Dropdown menu*/
@@ -67,9 +72,10 @@
 }
 
 .dropdown-content a{
-  color: white;
+  color: #bbbbbb;
   padding: 10px 15px;
   display: block;
+  text-align: left;
 }
 
 .dropdown-content a:hover {
@@ -81,8 +87,11 @@
 }
 
 .dropbtn:hover {
-  color: #3c3c3c
+  cursor: pointer;
 }
+
+
+/*Main*/
 
 main{
   margin-top: 0px;
@@ -118,7 +127,7 @@ main{
 
 p {
   font-size: 0.95rem;
-  color: #333;
+  color: #ffffff;
   text-align: left;
 }
 
@@ -144,11 +153,13 @@ p {
 
 h2{
   text-align: left;
+  color: white;
 }
 
 h1{
   font-family: "Space Grotesk", sans-serif;
   font-weight: 400;
+  color: white;
 }
 
 .my-chart{
