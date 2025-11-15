@@ -193,3 +193,27 @@ h1{
 .monthly-table tbody tr:hover{
   background: #f9fafb;
 }
+
+.my-button {
+  background-color: #1c1c1c;
+  color: white;
+  border: 1px solid #5d00ff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s ease; /* smooth animation */
+  margin: 0 10px;
+  /* margin-top: 200px; */
+}
+
+.my-button:hover {
+  transform: scale(1.05);
+  background: #1c1c1c !important;
+  color: white !important;
+  padding: 12px 24px !important;
+  border-radius: 20px !important;
+  border: 1px solid #ffffff !important;
+  box-shadow: 0 0 10px #026bf5 !important;
+  display: inline-block !important;
+}
